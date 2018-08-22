@@ -123,6 +123,10 @@ SRCS+= dsa_meth.c
 SRCS+= dso_dlfcn.c dso_err.c dso_lib.c dso_null.c
 SRCS+= dso_openssl.c
 
+# e222/
+
+SRCS+= mod_e222_m117.c
+
 # ec/
 SRCS+= ec_lib.c ecp_smpl.c ecp_mont.c ecp_nist.c ec_cvt.c ec_mult.c
 SRCS+= ec_err.c ec_curve.c ec_check.c ec_print.c ec_asn1.c ec_key.c
@@ -285,6 +289,7 @@ SRCS+= pcy_cache.c pcy_node.c pcy_data.c pcy_map.c pcy_tree.c pcy_lib.c
 	${LCRYPTO_SRC}/dh \
 	${LCRYPTO_SRC}/dsa \
 	${LCRYPTO_SRC}/dso \
+	${LCRYPTO_SRC}/e222 \
 	${LCRYPTO_SRC}/ec \
 	${LCRYPTO_SRC}/ecdh \
 	${LCRYPTO_SRC}/ecdsa \
@@ -343,6 +348,7 @@ HDRS=\
 	${LCRYPTO_SRC}/dh/dh.h \
 	${LCRYPTO_SRC}/dsa/dsa.h \
 	${LCRYPTO_SRC}/dso/dso.h \
+	${LCRYPTO_SRC}/e222/mod_e222_m117.h \
 	${LCRYPTO_SRC}/ec/ec.h \
 	${LCRYPTO_SRC}/ecdh/ecdh.h \
 	${LCRYPTO_SRC}/ecdsa/ecdsa.h \
